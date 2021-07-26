@@ -50,7 +50,10 @@
             <td><?php echo $persona->Dirección?></td>
 
             <td class="bot"><a href="borrar.php?id=<?php echo $persona->id?>"><input type='button' name='del' id='del' value='Borrar'></a></td>
-            <td class="bot"><input type='button' name='up' id='up' value='Actualizar'> </td>
+            <td class="bot"><a href="update.php?id=<?php echo $persona->id?> 
+            & nom=<?php echo $persona->Nombre?> 
+            & apell=<?php echo $persona->Apellido?>
+            & dire=<?php echo $persona->Dirección?>"><input type='button' name='up' id='up' value='Actualizar'></a> </td>
         </tr>
 
         <?php
