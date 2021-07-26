@@ -49,7 +49,7 @@
             <td><?php echo $persona->Apellido?></td>
             <td><?php echo $persona->Dirección?></td>
 
-            <td class="bot"><input type='button' name='del' id='del' value='Borrar'> </td>
+            <td class="bot"><a href="borrar.php?id=<?php echo $persona->id?>"><input type='button' name='del' id='del' value='Borrar'></a></td>
             <td class="bot"><input type='button' name='up' id='up' value='Actualizar'> </td>
         </tr>
 
